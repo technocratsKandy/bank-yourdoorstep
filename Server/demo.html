@@ -1,0 +1,27 @@
+<!-- This is server side -->
+<html>
+    <head>
+        <script src="jquery-1.7.2.min.js"></script>
+        <script src="fcs.js"></script>
+        <script src="kandy.js"></script>
+        <script src="main.js"></script>
+        <style href="speechtotext.css"></style>
+    </head>
+    <body>
+        <div id="incoming-video"></div>
+        <div id="outgoing-video"></div>
+        <button id="btnAnswer">Answer</button>
+        <span id="username-incoming"></span>
+        <!-- Speech to text-->
+        <div class="right" style="visibility: hidden;">
+			<button id="start_button" visible="false" onclick="startButton(event);">
+                <img id="start_img" src="mic.gif" alt="Start">
+            </button>
+		</div>
+		<div id="results">
+			<span id="final_span" class="final"></span>
+		</div>
+	    <script src="speechtotext.js"></script>
+		<!-- Speech to text-->
+    </body>
+</html>
